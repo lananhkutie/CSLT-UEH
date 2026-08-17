@@ -40,7 +40,14 @@ namespace CSLT_UEH.session02
             double feet = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"{feet} feet= {feet * 0.3048} met");
 
-            //Câu 5
+            //Câu 5:to convert Celsius to Fahrenheit and vice versa
+            Console.WriteLine("Câu 5");
+            Console.WriteLine("Nhap do C:");
+            double celsius = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Nhap do F:");
+            double Farrentheit= Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{celsius} do C = {celsius * 1.8 + 32} do F");
+            Console.WriteLine($"{Farrentheit} do F = {(Farrentheit - 32) / 1.8} do C"); 
 
         }
     }
