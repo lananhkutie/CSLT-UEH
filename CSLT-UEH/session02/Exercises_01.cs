@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 
 namespace CSLT_UEH.session02
@@ -47,7 +48,17 @@ namespace CSLT_UEH.session02
             Console.WriteLine("Nhap do F:");
             double Farrentheit= Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"{celsius} do C = {celsius * 1.8 + 32} do F");
-            Console.WriteLine($"{Farrentheit} do F = {(Farrentheit - 32) / 1.8} do C"); 
+            Console.WriteLine($"{Farrentheit} do F = {(Farrentheit - 32) / 1.8} do C");
+
+            //Câu 6:to find the Size of data types
+            Console.WriteLine("Câu 6");
+            Console.WriteLine($"Size of int: {sizeof(int)} bytes");
+            Console.WriteLine($"Size of float: {sizeof(float)} bytes");
+            Console.WriteLine($"Size of double: {sizeof(double)} bytes");
+            Console.WriteLine($"Size of char: {sizeof(char)} bytes");
+            Console.WriteLine($"Size of bool: {sizeof(bool)} bytes");
+
+            //Câu 7:to Print ASCII Value (tip: read character, print number of this char)
 
         }
     }
