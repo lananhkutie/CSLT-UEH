@@ -7,7 +7,7 @@ namespace CSLT_UEH.session02
 {
     internal class Exercises_01
     {
-        private static void Main(string[] args)
+        private static void Main1(string[] args)
         {
             //Câu 1 : Viết chương trình nhập vào hai số nguyên và in ra tổng của chúng.
             Console.WriteLine("Hello, my name is Anh");
