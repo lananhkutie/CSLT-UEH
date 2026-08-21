@@ -59,6 +59,33 @@ namespace CSLT_UEH.session02
             Console.WriteLine($"Size of bool: {sizeof(bool)} bytes");
 
             //Câu 7:to Print ASCII Value (tip: read character, print number of this char)
+            Console.WriteLine("Câu 7");
+            Console.WriteLine("Nhap mot ky tu:");
+            char ch = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine($"ASCII value of {ch} is: {(int)ch}");
+
+            //8. to Calculate Area of Circle
+            Console.WriteLine("Câu 8");
+            Console.WriteLine("Nhap duong kinh hinh tron:");
+            float radius= Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine($"dien tich hinh tron la: {Math.PI * radius * radius}");
+
+            //9.to Calculate Area of Square
+            Console.WriteLine("Câu 9");
+            Console.WriteLine("Nhap canh hinh vuong:");
+            double side = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"dien tich hinh vuong la: {side * side}");
+
+            //10.to convert days to years, weeks and days
+            Console.WriteLine("Câu 10");
+            Console.WriteLine("Nhap so ngay:");
+            int days = Convert.ToInt32(Console.ReadLine());
+            int years = days / 365;
+            int weeks = (days % 365) / 7;
+            int remainingDays = (days % 365) % 7;
+            Console.WriteLine($"{days} ngay = {years} nam, {weeks} tuan, {remainingDays} ngay");
+
+
 
         }
     }
