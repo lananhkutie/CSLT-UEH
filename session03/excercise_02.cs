@@ -13,7 +13,7 @@ namespace CSLT_UEH.session02
             float celcius;
             while (true)
             {
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine();
                 if (float.TryParse(input, out celcius))
                 {
                     Console.WriteLine($" do Kelvin = {celcius + 273}");
@@ -79,16 +79,14 @@ namespace CSLT_UEH.session02
             Console.WriteLine("\nNhan phim bat ky de thoat...");
             Console.ReadKey();
         }
-        private static void Main(string[] args)
+        private static void Main1(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            //bai1_slide();
-            //bai2_slide();
-            //bai3_slide();
-            decimal csd_cu;
-            decimal csd_moi;
-            Console.WriteLine("nhap chi so dien cu");
+            bai1_slide();
+            bai2_slide();
+            bai3_slide();
+           
 
         }
     }
