@@ -80,7 +80,7 @@ namespace CSLT_UEH.session_4
                 Console.WriteLine($"{c} là một ký tự khác");
             }
         }
-        static void Bai_06()
+        static void Pt_bac2()
         {
             //Giải pt bậc 2 bằng câu lệnh if else
             Console.WriteLine("Nhập a: ");
