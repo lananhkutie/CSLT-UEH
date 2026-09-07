@@ -165,7 +165,6 @@ namespace CSLT_UEH.session03
         }
         static void Bai_5()
         {
-            Console.OutputEncoding = Encoding.UTF8;
             string diemChu = "";
             double diemGPA = 0;
             string xepLoai = "";
@@ -220,8 +219,16 @@ namespace CSLT_UEH.session03
             Console.WriteLine($"Xếp loại học lực: {xepLoai}");
 
         }
+        static void Bai_6()
+        {
+        }
         private static void Main1(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.WriteLine("Bài 6:  Chuẩn Hóa Họ Tên Người Dùng & Tự Động Tạo Email/Username ");
+            Console.WriteLine("Nhập họ tên:");
+            string cleanName = Console.ReadLine().Trim().ToLower();
+            
         }
 
 

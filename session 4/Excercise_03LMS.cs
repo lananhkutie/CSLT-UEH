@@ -84,7 +84,7 @@ namespace CSLT_UEH.session_4
                 Console.WriteLine("Điểm thuộc góc phần tư thứ tư");
             }
         }
-        private static void Main(string[] args)
+        private static void Main1(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
         }
