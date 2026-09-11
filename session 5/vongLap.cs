@@ -70,17 +70,13 @@ namespace CSLT_UEH.session_5
         static void Bai4_5()
         {
 
-        }
-        private static void Main(string[] args)
-        {
-            Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Write a program to display a pattern like triangles with a number");
             Console.WriteLine("Nhập số dòng:");
             int n= Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine( "Hình 1:");
-            for (int i =1; i<=n; i++)
+            Console.WriteLine("Hình 1:");
+            for (int i = 1; i <= n; i++)
             {
-                for (int j=1; j<=i; j++ )
+                for (int j = 1; j <= i; j++)
                 {
                     Console.Write(j + "\t");
                 }
@@ -88,16 +84,96 @@ namespace CSLT_UEH.session_5
             }
             Console.WriteLine("hình 2:");
             int so = 1;
-            for (int i=1; i<=n; i++)
+            for (int i = 1; i <= n; i++)
             {
-                for ( int j=1; j<=i; j++ )
+                for (int j = 1; j <= i; j++)
                 {
                     Console.Write(so + "\t");
                     so++;
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("hình 3:");
+            int number = 1;
+            for (int i =1; i<=n; i++)
+            {
+                for (int j = 1; j <= n - i; j++)
+                {
+                    Console.Write(". ");
+                }
+                for (int t=1; t<=i; t++)
+                {
+                    Console.Write(number);
+                    Console.Write(" ");
+                    number++;
+                }
+                Console.WriteLine();
+            }
+        }
+        static void Bai6()
+        {
+            Console.WriteLine("Write a program to display the n terms of harmonic series and their sum. 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n terms");
+            int i = int.Parse(Console.ReadLine());
+            float sum = 0;
+            for (int j = 1; j <= i; j++)
+            {
+                sum = sum + 1.0f / j;
+            }
+            Console.WriteLine($"Sum of harmonic series: {sum}");
+        }
+        static void Bai7()
+        {
 
+            Console.WriteLine("Write a program to find the ‘perfect’ numbers within a given number range.");
+            // số hoàn hảo là số mà tổng các ước số của nó (ngoại trừ chính nó) bằng chính nó. Ví dụ: 6 là số hoàn hảo vì 1 + 2 + 3 = 6.
+            Console.Write("Nhập số cần kiểm tra:");
+            int num= int.Parse(Console.ReadLine());
+            int sum = 0;
+            for (int i =1; i<= num/2; i++)
+            {
+                if (num % i==0)
+                {
+                    sum += i;
+                }
+            }
+
+            if (sum == num)
+            {
+                Console.WriteLine($"{num} là số hoàn hảo");
+            }
+            else
+            {
+                Console.WriteLine($"{num} không phải là số hoàn hảo");
+            }
+        }
+        private static void Main(string[] args)
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+
+            Console.WriteLine("Write a program to determine whether a given number is prime or not.");
+            Console.WriteLine("Nhập số cần kiểm tra:");
+            int num = int.Parse(Console.ReadLine());
+            bool prime = true;
+            for (int i = 2; i <= num / 2; i++)
+            {
+                if (num % i == 0)
+                {
+                    prime = false;
+                    break;
+                }
+            }
+            if (prime)
+            {
+                Console.WriteLine($"{num} là số nguyên tố");
+            }
+                else
+                {
+                    Console.WriteLine($"{num} không phải là số nguyên tố");
+                }
+            
+
+
+            
         }
     }
 }
