@@ -146,7 +146,7 @@ namespace CSLT_UEH.session_5
                 Console.WriteLine($"{num} không phải là số hoàn hảo");
             }
         }
-        private static void Main(string[] args)
+        private static void Main1(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
 
