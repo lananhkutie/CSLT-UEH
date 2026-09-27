@@ -231,7 +231,7 @@ namespace CSLT_UEH._20_bài_fuctions
             string[] words = sentence.Split(" ");
             return words.Length;
         }
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             //Console.WriteLine( XoaTrungLap("Supercalifrasgilisticexpialidouciou"));
